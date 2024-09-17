@@ -1,0 +1,194 @@
+@charset "utf-8";
+body{
+	margin:4em;
+	background-image: url("img/mountain-2593944_1280.jpg");
+	background-repeat:repeat;
+}
+
+header{
+	background-color:#7798AB;
+	text-align: center;
+	border-radius: 15px 15px 0px 0px;
+	height: 10em;
+	
+}
+
+header h1{
+	padding: 1em;
+}
+
+main section{
+	background-color:#C3DBC5;
+	border-radius: 15px;	
+}
+
+nav{
+	border-style:solid;
+	border-radius: 0px 0px 15px 15px;
+	background-color:black;
+	padding-bottom:10px;
+}
+
+/*目錄的自訂清單*/
+nav li{
+	list-style-type: none;
+	display: inline-block;
+	margin-top:0px;
+	height: 20px;
+	border-style: solid;
+	width:31%;
+	margin:auto;
+	
+	
+}
+
+/*目錄自訂清單中的超連結*/
+nav a{
+	color:white;
+	background-color:#7798AB;
+	border-radius:15px;
+	padding:10px;
+	display: block;
+	text-align: center;
+}
+
+nav a:hover{
+	color:black;
+	background-color:gainsboro;
+}
+
+a[target="_blank"]::after{
+	content: "";
+    background-image: url("img/web-domain.png");
+	margin-left: 5px;
+	vertical-align: middle;
+	background-size: contain; 
+    width: 20px; 
+    height: 20px; 
+	display: inline-block;
+}
+
+a[target="_parent"]::after{
+	content: "";
+    background-image: url("img/instagram.png");
+	margin-left: 5px;
+	vertical-align: middle;
+	background-size: contain; 
+    width: 20px; 
+    height: 20px; 
+	display: inline-block;
+}
+
+a[href^="mailto:"]::after{
+	content: "";
+    background-image: url("img/mail.png");
+	margin-left: 5px;
+	vertical-align: middle;
+	background-size: contain; 
+    width: 20px; 
+    height: 20px; 
+	display: inline-block;
+}
+
+a[href^="tel:"]::after{
+	content: "";
+    background-image: url("img/telephone.png");
+	margin-left: 5px;
+	vertical-align: middle;
+	background-size: contain; 
+    width: 20px; 
+    height: 20px; 
+	display: inline-block;
+}
+
+/*文章區塊*/
+.box{
+	padding:10px;
+	margin-top:20px;
+}
+
+section h2{
+	text-align:center;
+}
+
+/*回到最前面的div*/
+#up{
+	position: fixed;
+	background-color: #7798AB;
+	width:40px;
+	bottom:5px;
+	right:5px;
+	border-radius:10px;
+}
+
+.catsimg{
+	width:50%;
+}
+
+.right{
+	display: inline-block;
+	float:right;
+	font-size: 30px;
+	text-align: center;
+	border-style:solid;
+	width:49%;
+}
+
+.left{
+	display: inline-block;
+	float:left;
+	font-size: 30px;
+	text-align: center;
+	border-style:solid;
+	width:48%;
+	margin-right:0.5%;
+	
+}
+
+.bigtitle{
+	font-family: "Pacifico", cursive;
+  	font-weight: 400;
+  	font-style: normal;
+}
+
+.inbox{
+	background-color:cornflowerblue;
+	opacity: 0.5;
+	border: 1px solid black;
+	width:98.6%;
+	border-radius: 5px;
+}
+
+.intable{
+	border: none;
+	width:50%;
+	margin: auto;
+}
+
+.intable th, .intable td{
+	border: 1px solid gray;
+	background-color:aliceblue;
+	border-radius: 5px;
+}
+
+.btn{
+	background-color:black;
+	color:white;
+	opacity: 0.7;
+	width:150px;
+	border-radius: 5px;
+}
+
+.btnbox{
+	width:310px;
+	margin:auto;
+	
+}
+
+::placeholder{
+	color: black;
+}
+
+
+
+
